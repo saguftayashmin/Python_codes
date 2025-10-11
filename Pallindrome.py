@@ -8,21 +8,18 @@ def pallincheck(x):
 x= "12321"
 pallincheck(x)
 
-#using function
+#using function concept
 def reverse(str):
     rev=""
     for i in str:
         rev=i+rev
     return rev.strip()
     
-
 def pallindromcheck(str):
     if str == reverse(str):
         print("Its pallindrom")
     else:
         print("Not pallindrome")
-
-
 
 str="sagufta"   
 pallindromcheck(str)
