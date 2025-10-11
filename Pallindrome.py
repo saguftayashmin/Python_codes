@@ -3,8 +3,7 @@ def pallincheck(x):
     if(x==x[::-1]):
         print("it a pallindrome")
     else:
-        print("not pallindrome")
-        
+        print("not pallindrome")    
 x= "12321"
 pallincheck(x)
 
@@ -20,8 +19,25 @@ def pallindromcheck(str):
         print("Its pallindrom")
     else:
         print("Not pallindrome")
-
 str="sagufta"   
 pallindromcheck(str)
+
+#using 
+def pallindromcheck(str):
+    
+    newstr = reversed(list(str))
+    
+    revstr = "".join(newstr)
+
+    if str == revstr:
+        print("Its pallindrom")
+    else:
+        print("Not pallindrome")
+
+
+
+str="madam"   
+pallindromcheck(str)
+
 
 
