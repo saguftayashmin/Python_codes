@@ -22,7 +22,7 @@ def pallindromcheck(str):
 str="sagufta"   
 pallindromcheck(str)
 
-#using 
+#using covert string to list concept
 def pallindromcheck(str):
     
     newstr = reversed(list(str))
