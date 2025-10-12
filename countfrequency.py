@@ -18,6 +18,26 @@ print(frequencyCount(nums))
 str = "aaabbbbccdddd"
 #a3b4c2d4
 
+str = "aaabbbbccdddd"
+#a3b4c2d4
+
+def frequencyCount(str):
+    dic = {}
+    for i in str:
+        if i in dic:
+            dic[i] = dic[i]+1
+        else: 
+            dic[i] = 1
+
+    result = ''
+    for k,v in dic.items():
+        result = result + f'{k}{v}'
+    return result
+    
+print(frequencyCount(str))
+
+#2nd way
+
 def frequencyCount(str):
     lis = list(str)
     dic = {}
