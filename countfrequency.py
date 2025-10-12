@@ -37,7 +37,6 @@ def frequencyCount(str):
 print(frequencyCount(str))
 
 #2nd way
-
 def frequencyCount(str):
     lis = list(str)
     dic = {}
@@ -53,7 +52,27 @@ def frequencyCount(str):
     for k, v in dic.items():
         result = result + f'{k}{v}'
             
-    return result
-    
+    return result    
     
 print(frequencyCount(str))
+
+str = "a3b4c2d4"
+#"aaabbbbccdddd"
+#print("a"*3+"b"*4+"c"*2+"d"*4)
+
+def frequencyCountReverse(str):
+    final = ""
+    result = ""
+    for i in str:
+        if i.isalpha():
+            result = result+i
+        else:
+            result = result * int(i)
+            final += result
+            result = ""
+    return final
+            
+    
+print(frequencyCountReverse(str))
+
+
